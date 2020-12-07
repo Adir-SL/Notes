@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+    line-height: 1em;
+    color: #666666;
+    background-color: #eeeeee;
+    user-select: none;
+    font-weight: 500;
+    /*   animation: fontWiggle 600ms linear infinite; */
+}
+
+@keyframes fontWiggle {
+    0% {
+        font-weight: 100;
+    }
+    50% {
+        font-weight: 900;
+    }
+    100% {
+        font-weight: 100;
+    }
+}
+
+ul, ol {
+    /*   width: 60%;
+    margin-left: 20%; */
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+li {
+    cursor: pointer;
+    padding-left: 0;
+    white-space: pre-wrap;
+    min-height: 2em;
+    height: fit-content;
+    line-height: 1.2em;
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    box-shadow: 0 -1px 0 0 #dddddd inset;
+    list-style-type: none;
+    overflow: hidden;
+    transition: all 100ms ease-in-out 0s;
+    animation: liAnim 200ms linear;
+    animation-delay: -200ms;
+}
+
+li br {
+    display: none;
+}
+
+li a, li a:visited {
+    color: #1891da;
+}
+
+li:last-of-type {
+    animation-delay: 0s;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+.removed {
+    text-decoration: line-through;
+    color: #cccccc;
+    height: 2em;
+    /*   pointer-events: none; */
+}
+
+#removeToggle {
+    display: none;
+}
+
+#removeToggle+label {
+    cursor: pointer;
+    /*   float: left; */
+    position: fixed;
+    right: 1em;
+    bottom: 0.6em;
+}
+
+#deleteDiv {
+    position: fixed;
+    left: 1em;
+    bottom: 0.6em;
+}
+
+dialog {
+    position: static;
+    width: 40%;
+    border: none;
+    border-radius: 4px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+dialog button {
+    float: right;
+}
+
+dialog button:nth-of-type(1) {
+    background-color: hotpink;
+    border: none;
+    color: #ffffff;
+}
+
+#removeToggle:checked+label {
+    color: hotpink;
+}
+
+#removeToggle:hover, #removeToggle+label:hover {
+    opacity: 0.8;
+}
+
+#myInput {
+    line-height: 2em;
+    padding-left: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+    caret-color: hotpink;
+    max-width: 50vw;
+    flex-grow: 3;
+}
+
+#myInput::placeholder {
+    color: #aaaaaa;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    /*   background: red; */
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: #eeeeee;
+    padding: 8px 0;
+}
+
+.centerDiv {
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding: 0.5em;
+    background-color: #ffffff;
+    color: #666666;
+    cursor: pointer;
+    margin-left: 8px;
+    flex-grow: 0.5;
+    /*   width: 9vw; */
+    /*   width: 7vw;
+    margin-left: 1vw; */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:focus {
+    border: 1px solid #666666;
+    color: #333333;
+}
+
+button:active {
+    background-color: #cccccc;
+}
+
+@keyframes liAnim {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

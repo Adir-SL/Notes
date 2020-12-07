@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📓 Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body onload="loadFunc();">
+    <div class="flexDiv sticky">
+      <input type="text" id="myInput" autocomplete="off" placeholder="Your new list item" />
+      <button onclick="btnClick();">+ Add Item</button>
+    </div>
+    <input type="checkbox" id="removeToggle" onclick="hideClick();" />
+    <label for="removeToggle">Hide</label>
+    <div class="flexDiv centerDiv">
+      <ul id="myList">
+        <li>Follow me on Twitter - <a href="https://twitter.com/adircode" target="_blank">@adircode</a></li>
+        <li style="display:none;"></li>
+      </ul>
+      <button id="deleteDiv" onclick="openDialog();">Delete</button>
+    </div>
+    <dialog id="deleteDialog">This will delete all your data including list items and prefrences and it <b>cannot be undone.</b><br />Are you sure?<br /><button id="deleteButton">Delete all data</button><button onclick="closeDialog();">Cancel</button></dialog>
+  </body>
+</html>
