@@ -74,10 +74,10 @@ function loadFunc() {
     localStorage.setItem("myList", document.getElementById("myList").innerHTML);
   }
   function openDialog() {
-    document.getElementById("deleteDialog").showModal();
+    document.getElementById("deleteDialog").style.display = "block";
   }
   function closeDialog() {
-    document.getElementById("deleteDialog").close();
+    document.getElementById("deleteDialog").style.display = "none";
   }
   window.addEventListener("click", function () {
     if (event.target.id == "deleteButton") {
