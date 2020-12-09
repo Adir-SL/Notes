@@ -7,7 +7,7 @@ function loadFunc() {
   }
   function addLi() {
     document.getElementById("myList").innerHTML +=
-      "<li>" + document.getElementById("myInput").value + "</li>";
+      '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);">' + document.getElementById("myInput").value + '</li>';
     localStorage.setItem("myList", document.getElementById("myList").innerHTML);
   }
   function clearLi() {
@@ -29,49 +29,23 @@ function loadFunc() {
 
   function toggleRemoved(event){
     if (event.target.className == "removed") {
-            event.target.className = "";
-          } else {
-            event.target.className = "removed";
-            event.target.setAttribute("contenteditable", false);
-            if(document.getElementById("removeToggle").checked){
-                event.target.style.height = "0";
-                event.target.style.minHeight = "0";
-                event.target.style.marginTop = "0";
-                event.target.style.paddingBottom = "0";
-            }
-          }
-        localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+      event.target.className = "";
+    } else {
+      event.target.className = "removed";
+      event.target.setAttribute("contenteditable", false);
+      if(document.getElementById("removeToggle").checked){
+          event.target.style.height = "0";
+          event.target.style.minHeight = "0";
+          event.target.style.marginTop = "0";
+          event.target.style.paddingBottom = "0";
+      }
+    }
+    localStorage.setItem("myList", document.getElementById("myList").innerHTML);
   }
   function liDblClick(event){
     event.target.setAttribute("contenteditable", true);
     event.target.focus();
   }
-  
-  // window.addEventListener("dblclick", function () {
-  //   if (event.target.tagName == "LI" || event.target.tagName == "li") {
-  //     event.target.setAttribute("contenteditable", true);
-  //     event.target.focus();
-  //   }
-  // });
-  
-  // window.addEventListener("click", function () {
-  //   alert("A"+event.target.tagName+"A")
-  //   if (event.target.tagName == "LI" || event.target.tagName == "li") {
-  //     if (event.target.className == "removed") {
-  //       event.target.className = "";
-  //     } else {
-  //       event.target.className = "removed";
-  //       event.target.setAttribute("contenteditable", false);
-  //       if(document.getElementById("removeToggle").checked){
-  //           event.target.style.height = "0";
-  //           event.target.style.minHeight = "0";
-  //           event.target.style.marginTop = "0";
-  //           event.target.style.paddingBottom = "0";
-  //       }
-  //     }
-  //   }
-  //   localStorage.setItem("myList", document.getElementById("myList").innerHTML);
-  // });
   function hideClick() {
     if (document.getElementById("removeToggle").checked) {
       var x = document.getElementsByClassName("removed");
