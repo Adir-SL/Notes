@@ -35,7 +35,7 @@ function loadFunc() {
   });
   
   window.addEventListener("click", function () {
-    alert("A"+event.target.className+"A")
+    alert("A"+event.target.tagName+"A")
     if (event.target.tagName == "LI" || event.target.tagName == "li") {
       if (event.target.className == "removed") {
         event.target.className = "";
