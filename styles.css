@@ -95,7 +95,7 @@ li:hover {
     border-radius: 4px;
     display: none;
     background-color: white;
-    z-index: 10;
+    /* z-index: 10; */
     box-shadow: 4px 4px 64px 0 rgba(0, 0, 0, 0.4), 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -144,7 +144,7 @@ li:hover {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 9;
+    /* z-index: 9; */
     background-color: #eeeeee;
     padding: 8px 0;
 }
