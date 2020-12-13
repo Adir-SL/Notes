@@ -25,14 +25,16 @@
       <input type="text" id="myInput" autocomplete="off" placeholder="Your new list item" />
       <button onclick="btnClick();">+ Add Item</button>
     </div>
-    <input type="checkbox" id="removeToggle" onclick="hideClick();" />
-    <label for="removeToggle">Hide</label>
     <div class="flexDiv centerDiv">
       <ul id="myList">
         <li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);">Follow me on Twitter - <a href="https://twitter.com/adircode" target="_blank">@adircode</a></li>
         <li style="display:none;"></li>
       </ul>
-      <button id="deleteClick" onclick="openDialog();">Delete</button>
+      <footer>
+        <button id="deleteClick" onclick="openDialog();">Delete</button>
+        <input type="checkbox" id="removeToggle" onclick="hideClick();" />
+        <label for="removeToggle">Hide</label>
+      </footer>
     </div>
     <div id="deleteDialog">This will delete all your data including list items and prefrences and it <b>cannot be undone.</b><br />Are you sure?<br /><button id="deleteButton">Delete all data</button><button onclick="closeDialog();">Cancel</button></div>
   </body>

@@ -26,6 +26,7 @@ ul, ol {
     border: 1px solid #dddddd;
     border-radius: 4px;
     background-color: #ffffff;
+    margin-bottom: 5em;
 }
 
 li {
@@ -67,22 +68,28 @@ li:hover {
     color: #cccccc;
     height: 2em;
 }
-
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 4em;
+    width: 100vw;
+    background-color: #eeeeee;
+    z-index: 20;
+}
 #removeToggle {
     display: none;
 }
 
 #removeToggle+label {
     cursor: pointer;
-    position: fixed;
-    right: 1em;
-    bottom: 2em;
+    position: absolute;
+    right: 1.5em;
+    bottom: 1.4em;
 }
 
 #deleteClick {
-    position: fixed;
-    left: 1em;
-    bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-top: .9em;
 }
 
 #deleteDialog {
