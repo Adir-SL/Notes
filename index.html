@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
 
     <meta property="twitter:card" content="summary_large_image">
@@ -23,11 +24,11 @@
 <body onload="loadFunc();">
     <div class="flexDiv sticky">
       <input type="text" id="myInput" autocomplete="off" placeholder="Your new list item" />
-      <button onclick="btnClick();">+ Add Item</button>
+      <button onclick="btnClick();"><i class="material-icons">add</i> Add Item</button>
     </div>
     <div class="flexDiv centerDiv">
       <ul id="myList">
-        <li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);">Follow me on Twitter - <a href="https://twitter.com/adircode" target="_blank">@adircode</a></li>
+        <li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);">Follow me on Twitter - <a href="https://twitter.com/adircode" target="_blank">@adircode</a><modbtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns></li>
         <li style="display:none;"></li>
       </ul>
       <footer>

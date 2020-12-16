@@ -7,7 +7,7 @@ function loadFunc() {
   }
   function addLi() {
     document.getElementById("myList").innerHTML +=
-      '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);">' + document.getElementById("myInput").value + '</li>';
+      '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);" onblur="loseEditables();" spellcheck=false>' + document.getElementById("myInput").value + '<modbtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns></li>';
     localStorage.setItem("myList", document.getElementById("myList").innerHTML);
   }
   function clearLi() {
@@ -20,31 +20,98 @@ function loadFunc() {
     }
   }
   
-  window.addEventListener("keyup", function (event) {
+  window.addEventListener("keydown", function (event) {
     if (event.keyCode === 13) {
       event.preventDefault();
+      var x = document.getElementsByTagName("li");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].setAttribute("contenteditable", false);
+        localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+      }
+      checkMods();
       btnClick();
     }
   });
 
-  function toggleRemoved(event){
-    if (event.target.className == "removed") {
-      event.target.className = "";
-    } else {
-      event.target.className = "removed";
-      event.target.setAttribute("contenteditable", false);
-      if(document.getElementById("removeToggle").checked){
-          event.target.style.height = "0";
-          event.target.style.minHeight = "0";
-          event.target.style.marginTop = "0";
-          event.target.style.paddingBottom = "0";
-      }
+  function loseEditables(){
+    var x = document.getElementsByTagName("li");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].setAttribute("contenteditable", false);
     }
+    checkMods();
     localStorage.setItem("myList", document.getElementById("myList").innerHTML);
   }
+  function startTimer(){
+    setTimeout(function(){
+      var x = document.getElementsByTagName("li");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].setAttribute("contenteditable", false);
+      }
+
+      var x = document.getElementsByClassName("delBtn");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].className = "delBtn";
+      }
+    }, 3000);
+  }
+
+  function checkMods(){
+    var x = document.getElementsByTagName("li");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      if(x[i].innerHTML.slice(-8) == "modbtns>"){
+      }else{
+        x[i].innerHTML += '<modbtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns>';
+      }
+    }
+  }
+  function toggleRemoved(event){
+    if(event.target.tagName == "button" || event.target.tagName == "BUTTON"){
+      if(event.target.className == "editBtn"){
+        var x = document.getElementsByTagName("li");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].setAttribute("contenteditable", false);
+        }
+        event.target.parentNode.parentNode.setAttribute("contenteditable", true);
+        event.target.parentNode.parentNode.focus();
+      }
+      if(event.target.classList[0] == "delBtn"){
+        if(event.target.classList[1] == "doubleCheck"){
+          event.target.parentNode.parentNode.outerHTML = "";
+          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+        }else{
+          event.target.className += " doubleCheck";
+          startTimer();
+        }
+      }
+    }else{
+      if(event.target.contentEditable == "true"){
+      }else{
+        if (event.target.className == "removed") {
+          event.target.className = "";
+          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+        } else {
+          event.target.className = "removed";
+          event.target.setAttribute("contenteditable", false);
+          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+          if(document.getElementById("removeToggle").checked){
+              event.target.style.height = "0";
+              event.target.style.minHeight = "0";
+              event.target.style.marginTop = "0";
+              event.target.style.paddingBottom = "0";
+          }
+        }
+      }
+    }
+  }
   function liDblClick(event){
-    event.target.setAttribute("contenteditable", true);
-    event.target.focus();
+    // event.target.setAttribute("contenteditable", true);
+    // event.target.focus();
   }
   function hideClick() {
     if (document.getElementById("removeToggle").checked) {

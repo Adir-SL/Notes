@@ -68,6 +68,50 @@ li:hover {
     color: #cccccc;
     height: 2em;
 }
+modBtns{
+    float: right;
+}
+modBtns button{
+    /* margin-right: 8px; */
+    border: none;
+    outline: none;
+    background: none;
+    height: .9em;
+}
+button i{
+    pointer-events: none;
+    margin-top: -12px;
+}
+.sticky button i{
+    transform: translateY(5px);
+}
+modBtns button:hover{
+    color: hotpink;
+}
+modBtns button:focus, modBtns button:active{
+    border: none;
+    outline: none;
+    background: none;
+    color: hotpink;
+}
+.doubleCheck::after{
+    content: 'Click the button again to delete item';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    width: fit-content;
+    margin-top: 1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    animation: fadeMe 3000ms linear forwards;
+}
+@keyframes fadeMe{
+    0%{opacity:0;}
+    10%{opacity:1;}
+    90%{opacity:1;}
+    100%{opacity:0;}
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -216,5 +260,11 @@ button:active {
     #deleteDialog {
         width: calc(80% - 16px);
         left: calc(10% - 8px);
+    }
+    modbtns button{
+        margin-top: 16px;
+    }
+    .doubleCheck::after{
+        transform: translateX(-100%);
     }
 }
