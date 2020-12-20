@@ -67,7 +67,7 @@ li:hover {
     text-decoration: line-through;
     color: #cccccc;
     height: 2em;
-    overflow: visible;
+    overflow: hidden;
 }
 modBtns{
     float: right;
