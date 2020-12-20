@@ -99,13 +99,14 @@ modBtns button:focus, modBtns button:active{
 .doubleCheck::after{
     content: 'Click the button again to delete item';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     width: fit-content;
-    margin-top: 1em;
+    margin-top: .2em;
     padding: 4px 8px;
     border-radius: 4px;
     transform: translateX(-50%);
+    pointer-events: none;
     animation: fadeMe 3000ms linear forwards;
 }
 @keyframes fadeMe{
