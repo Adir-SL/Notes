@@ -76,7 +76,7 @@ modBtns button{
     border: none;
     outline: none;
     background: none;
-    height: .9em;
+    /* height: .9em; */
     overflow: visible;
 }
 button i{
