@@ -69,7 +69,7 @@ li:hover {
     height: 2em;
 }
 modBtns{
-    float: right;
+    /* float: right; */
 }
 modBtns button{
     /* margin-right: 8px; */
