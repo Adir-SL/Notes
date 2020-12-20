@@ -40,7 +40,7 @@ li {
     padding-bottom: 0.5em;
     box-shadow: 0 -1px 0 0 #dddddd inset;
     list-style-type: none;
-    overflow: visible;
+    overflow: hidden;
     transition: all 100ms ease-in-out 0s;
     animation: liAnim 200ms linear;
     animation-delay: -200ms;
@@ -66,7 +66,8 @@ li:hover {
 .removed {
     text-decoration: line-through;
     color: #cccccc;
-    height: 2em;
+    min-height: 2em;
+    height: fit-content;
     overflow: hidden;
 }
 modBtns{
@@ -74,11 +75,9 @@ modBtns{
     margin-top: -3px;
 }
 modBtns button{
-    /* margin-right: 8px; */
     border: none;
     outline: none;
     background: none;
-    /* height: .9em; */
     overflow: visible;
 }
 button i{
@@ -255,7 +254,6 @@ button:active {
     li{
         line-height: 1em;
         margin-top: 1em;
-        padding-bottom: 0.25;
     }
     #myInput {
         line-height: 1em;
@@ -263,9 +261,6 @@ button:active {
     #deleteDialog {
         width: calc(80% - 16px);
         left: calc(10% - 8px);
-    }
-    modbtns button{
-        /* margin-top: 16px; */
     }
     .doubleCheck::after{
         transform: translateX(-100%);
