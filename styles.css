@@ -263,7 +263,7 @@ button:active {
         left: calc(10% - 8px);
     }
     modbtns button{
-        margin-top: 16px;
+        /* margin-top: 16px; */
     }
     .doubleCheck::after{
         transform: translateX(-100%);
