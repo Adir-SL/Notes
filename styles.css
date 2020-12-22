@@ -70,9 +70,11 @@ li:hover {
     height: fit-content;
     overflow: hidden;
 }
+li modBtns{opacity: 0;}
+li:hover modBtns{opacity: 1;}
 modBtns{
     float: right;
-    margin-top: -3px;
+    transition: opacity 200ms linear 0s;
 }
 modBtns button{
     border: none;
@@ -102,6 +104,7 @@ modBtns button:focus, modBtns button:active{
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     width: fit-content;
+    white-space: nowrap;
     margin-top: .2em;
     padding: 4px 8px;
     border-radius: 4px;
@@ -265,5 +268,8 @@ button:active {
     }
     .doubleCheck::after{
         transform: translateX(-100%);
+    }
+    li modBtns{
+        opacity: 1;
     }
 }
