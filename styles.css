@@ -73,6 +73,9 @@ button i{
     pointer-events: none;
     margin-top: -12px;
 }
+#myDate button{
+    flex-grow: 1;
+}
 #myDate button i{
     margin-top: 0;
 }
