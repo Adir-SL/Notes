@@ -157,7 +157,7 @@ function loadFunc() {
 
     yesterday.setDate(yesterday.getDate() - 1)
 
-    today.toDateString()
+    // today.toDateString()
     document.getElementById("todayDate").innerText = yesterday.toDateString()
   }
 
