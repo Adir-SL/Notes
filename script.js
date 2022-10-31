@@ -148,3 +148,11 @@ function loadFunc() {
       closeDialog();
     }
   });
+
+  function dateMinus(){
+    console.log("minus");
+  }
+
+  function datePlus(){
+    console.log("+");
+  }
