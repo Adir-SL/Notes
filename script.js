@@ -2,6 +2,7 @@ function loadFunc() {
   window.actualToday = new Date();
   window.today = new Date();
   window.yesterday = new Date(today);
+  document.getElementById("todayDate").innerText = window.actualToday.toDateString();
     loadedList = localStorage.getItem("myList");
     if (loadedList) {
       document.getElementById("myList").innerHTML = loadedList;
