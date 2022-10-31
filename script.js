@@ -161,7 +161,11 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.yesterday.toDateString();
     window.today = window.yesterday;
 
-    if(){}
+    if(window.today == window.actualToday){
+      document.getElementById("todayDate").classList.add("bold");
+    }else{
+      document.getElementById("todayDate").classList.remove("bold");
+    }
   }
 
   function datePlus(){
