@@ -151,6 +151,14 @@ function loadFunc() {
 
   function dateMinus(){
     console.log("minus");
+
+    const today = new Date()
+    const yesterday = new Date(today)
+
+    yesterday.setDate(yesterday.getDate() - 1)
+
+    today.toDateString()
+    document.getElementById("todayDate").innerText = yesterday.toDateString()
   }
 
   function datePlus(){
