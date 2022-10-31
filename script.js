@@ -172,8 +172,6 @@ function loadFunc() {
   function datePlus(){
     console.log("+");
 
-    console.log("minus");
-
     window.yesterday.setDate(window.yesterday.getDate() + 1)
 
     // today.toDateString()
