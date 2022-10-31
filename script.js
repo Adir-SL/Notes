@@ -178,4 +178,10 @@ function loadFunc() {
     // today.toDateString()
     document.getElementById("todayDate").innerText = window.yesterday.toDateString();
     window.today = window.yesterday;
+
+    if(window.today == window.actualToday){
+      document.getElementById("todayDate").classList.add("bold");
+    }else{
+      document.getElementById("todayDate").classList.remove("bold");
+    }
   }
