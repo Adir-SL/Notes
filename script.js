@@ -1,4 +1,5 @@
 function loadFunc() {
+  window.actualToday = new Date();
   window.today = new Date();
   window.yesterday = new Date(today);
     loadedList = localStorage.getItem("myList");
@@ -159,6 +160,8 @@ function loadFunc() {
     // today.toDateString()
     document.getElementById("todayDate").innerText = window.yesterday.toDateString();
     window.today = window.yesterday;
+
+    if(){}
   }
 
   function datePlus(){
