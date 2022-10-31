@@ -190,4 +190,5 @@ function loadFunc() {
   function gotoToday(){
     document.getElementById("todayDate").innerText = window.actualToday.toDateString();
     window.today = window.actualToday;
+    document.getElementById("todayDate").classList.add("bold");
   }
