@@ -83,6 +83,9 @@ button i{
 #myDate button i{
     margin-top: 4px;
 }
+#todayDate{
+    width: 160px;
+}
 .sticky button i{
     transform: translateY(5px);
 }
