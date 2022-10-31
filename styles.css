@@ -76,8 +76,12 @@ button i{
 #myDate{
     display: flex;
 }
+#myDate button{
+    background-color: transparent;
+    border: none;
+}
 #myDate button i{
-    margin-top: 0;
+    margin-top: 4px;
 }
 .sticky button i{
     transform: translateY(5px);
