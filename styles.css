@@ -73,6 +73,9 @@ button i{
     pointer-events: none;
     margin-top: -12px;
 }
+#myDate button i{
+    margin-top: 0;
+}
 .sticky button i{
     transform: translateY(5px);
 }
