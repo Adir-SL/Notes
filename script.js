@@ -161,7 +161,7 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.yesterday.toDateString();
     window.today = window.yesterday;
 
-    if(window.today == window.actualToday){
+    if(window.today.toDateString() == window.actualToday.toDateString()){
       document.getElementById("todayDate").classList.add("bold");
     }else{
       document.getElementById("todayDate").classList.remove("bold");
@@ -179,7 +179,7 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.yesterday.toDateString();
     window.today = window.yesterday;
 
-    if(window.today == window.actualToday){
+    if(window.today.toDateString() == window.actualToday.toDateString()){
       document.getElementById("todayDate").classList.add("bold");
     }else{
       document.getElementById("todayDate").classList.remove("bold");
