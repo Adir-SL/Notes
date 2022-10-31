@@ -1,6 +1,6 @@
 function loadFunc() {
-  window.today = new Date()
-  window.yesterday = new Date(today)
+  window.today = new Date();
+  window.yesterday = new Date(today);
     loadedList = localStorage.getItem("myList");
     if (loadedList) {
       document.getElementById("myList").innerHTML = loadedList;
