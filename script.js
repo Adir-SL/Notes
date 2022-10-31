@@ -186,7 +186,9 @@ function loadFunc() {
   }
 
   function gotoToday(){
-    document.getElementById("todayDate").innerText = window.actualToday.toDateString();
-    window.yesterday = window.actualToday;
+    window.actualToday = new Date();
+    window.today = new Date();
+    window.yesterday = new Date(today);
+    document.getElementById("todayDate").innerText = window.today.toDateString();
     document.getElementById("todayDate").classList.add("bold");
   }
