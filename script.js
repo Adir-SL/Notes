@@ -1,6 +1,6 @@
 function loadFunc() {
-  const today = new Date()
-  const yesterday = new Date(today)
+  window.today = new Date()
+  window.yesterday = new Date(today)
     loadedList = localStorage.getItem("myList");
     if (loadedList) {
       document.getElementById("myList").innerHTML = loadedList;
@@ -154,11 +154,11 @@ function loadFunc() {
   function dateMinus(){
     console.log("minus");
 
-    yesterday.setDate(yesterday.getDate() - 1)
+    window.yesterday.setDate(window.yesterday.getDate() - 1)
 
     // today.toDateString()
-    document.getElementById("todayDate").innerText = yesterday.toDateString();
-    today = yesterday;
+    document.getElementById("todayDate").innerText = window.yesterday.toDateString();
+    window.today = window.yesterday;
   }
 
   function datePlus(){
