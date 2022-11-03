@@ -2,17 +2,16 @@ function loadFunc() {
   window.actualToday = new Date();
   window.today = new Date();
   window.yesterday = new Date(today);
-  loadList(e);
+  loadList();
     // alert(loadedList);
   }
 
-  function loadList(event){
+  function loadList(){
     document.getElementById("todayDate").innerText = window.actualToday.toDateString();
     loadedList = localStorage.getItem("myList "+document.getElementById("todayDate").innerText);
     if (loadedList) {
       console.log(document.getElementById("todayDate").innerText)
       document.getElementById("myList").innerHTML = loadedList;
-      event.preventDefault();
     }
   }
   function addLi() {
@@ -174,8 +173,7 @@ function loadFunc() {
       document.getElementById("todayDate").classList.remove("bold");
     }
 
-    // setTimeout(loadList, 1000);
-    loadList(e);
+    setTimeout(loadList, 1000);
   }
 
   function datePlus(){
@@ -192,8 +190,7 @@ function loadFunc() {
     }else{
       document.getElementById("todayDate").classList.remove("bold");
     }
-    // setTimeout(loadList, 1000);
-    loadList(e);
+    setTimeout(loadList, 1000);
   }
 
   function gotoToday(){
@@ -203,6 +200,5 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.today.toDateString();
     document.getElementById("todayDate").classList.add("bold");
 
-    // setTimeout(loadList, 1000);
-    loadList(e);
+    setTimeout(loadList, 1000);
   }
