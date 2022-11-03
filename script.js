@@ -2,7 +2,7 @@ function loadFunc() {
   window.actualToday = new Date();
   window.today = new Date();
   window.yesterday = new Date(today);
-  loadList();
+  loadList(e);
     // alert(loadedList);
   }
 
