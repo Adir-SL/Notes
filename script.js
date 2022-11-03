@@ -191,4 +191,6 @@ function loadFunc() {
     window.yesterday = new Date(today);
     document.getElementById("todayDate").innerText = window.today.toDateString();
     document.getElementById("todayDate").classList.add("bold");
+
+    loadFunc();
   }
