@@ -2,16 +2,19 @@ function loadFunc() {
   window.actualToday = new Date();
   window.today = new Date();
   window.yesterday = new Date(today);
+  document.getElementById("todayDate").innerText = window.actualToday.toDateString();
   loadList();
     // alert(loadedList);
   }
 
   function loadList(){
-    document.getElementById("todayDate").innerText = window.actualToday.toDateString();
+    // document.getElementById("todayDate").innerText = window.actualToday.toDateString();
+    // window.dateStore = document.getElementById("todayDate").innerText;
     loadedList = localStorage.getItem("myList "+document.getElementById("todayDate").innerText);
     if (loadedList) {
       console.log(document.getElementById("todayDate").innerText)
       document.getElementById("myList").innerHTML = loadedList;
+      // document.getElementById("todayDate").innerText = window.dateStore;
     }
   }
   function addLi() {
