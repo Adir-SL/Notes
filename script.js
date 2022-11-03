@@ -167,6 +167,8 @@ function loadFunc() {
     }else{
       document.getElementById("todayDate").classList.remove("bold");
     }
+
+    loadFunc();
   }
 
   function datePlus(){
@@ -183,6 +185,8 @@ function loadFunc() {
     }else{
       document.getElementById("todayDate").classList.remove("bold");
     }
+
+    loadFunc();
   }
 
   function gotoToday(){
