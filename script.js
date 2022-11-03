@@ -15,6 +15,8 @@ function loadFunc() {
       console.log(document.getElementById("todayDate").innerText)
       document.getElementById("myList").innerHTML = loadedList;
       // document.getElementById("todayDate").innerText = window.dateStore;
+    }else{
+      document.getElementById("myList").innerHTML = "";
     }
   }
   function addLi() {
