@@ -172,7 +172,7 @@ function loadFunc() {
       document.getElementById("todayDate").classList.remove("bold");
     }
 
-    setTimeout(loadFunc, 1000);
+    setTimeout(loadList, 1000);
   }
 
   function datePlus(){
@@ -189,7 +189,7 @@ function loadFunc() {
     }else{
       document.getElementById("todayDate").classList.remove("bold");
     }
-    setTimeout(loadFunc, 1000);
+    setTimeout(loadList, 1000);
   }
 
   function gotoToday(){
@@ -199,5 +199,5 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.today.toDateString();
     document.getElementById("todayDate").classList.add("bold");
 
-    setTimeout(loadFunc, 1000);
+    setTimeout(loadList, 1000);
   }
