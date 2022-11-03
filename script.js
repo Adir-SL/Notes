@@ -185,7 +185,6 @@ function loadFunc() {
     }else{
       document.getElementById("todayDate").classList.remove("bold");
     }
-
     loadFunc();
   }
 
