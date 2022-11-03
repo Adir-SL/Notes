@@ -3,7 +3,7 @@ function loadFunc() {
   window.today = new Date();
   window.yesterday = new Date(today);
   document.getElementById("todayDate").innerText = window.actualToday.toDateString();
-    loadedList = localStorage.getItem("myList");
+    loadedList = localStorage.getItem("myList "+document.getElementById("todayDate").innerText);
     if (loadedList) {
       document.getElementById("myList").innerHTML = loadedList;
     }
@@ -12,7 +12,7 @@ function loadFunc() {
   function addLi() {
     document.getElementById("myList").innerHTML +=
       '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);" onblur="loseEditables();" spellcheck=false>' + document.getElementById("myInput").value + '<modbtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns></li>';
-    localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+    localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
   }
   function clearLi() {
     document.getElementById("myInput").value = "";
@@ -31,7 +31,7 @@ function loadFunc() {
       var i;
       for (i = 0; i < x.length; i++) {
         x[i].setAttribute("contenteditable", false);
-        localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+        localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
       }
       checkMods();
       btnClick();
