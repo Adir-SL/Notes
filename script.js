@@ -10,6 +10,7 @@ function loadFunc() {
     document.getElementById("todayDate").innerText = window.actualToday.toDateString();
     loadedList = localStorage.getItem("myList "+document.getElementById("todayDate").innerText);
     if (loadedList) {
+      console.log(document.getElementById("todayDate").innerText)
       document.getElementById("myList").innerHTML = loadedList;
     }
   }
