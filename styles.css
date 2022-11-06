@@ -193,6 +193,11 @@ footer{
     color: #aaaaaa;
 }
 
+#myList:empty::after{
+    content: 'Nothing to see here yet. To add an item';
+    opacity: 0.3;
+}
+
 .flexDiv {
     display: flex;
     justify-content: space-between;
