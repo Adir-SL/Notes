@@ -157,7 +157,7 @@ function loadFunc() {
   }
   window.addEventListener("click", function () {
     if (event.target.id == "deleteButton") {
-      localStorage.removeItem("myList");
+      localStorage.removeItem("myList "+document.getElementById("todayDate").innerText);
       setTimeout(function(){location.reload();}, 500);
       closeDialog();
     }
