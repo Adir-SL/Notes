@@ -194,7 +194,7 @@ footer{
 }
 
 #myList:empty::after{
-    content: 'Nothing to see here yet. To add an item use the input above.';
+    content: 'Nothing here yet. To add an item use the input above.';
     opacity: 0.2;
 }
 
