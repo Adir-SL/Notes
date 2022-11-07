@@ -197,7 +197,9 @@ footer{
     content: 'Nothing here yet. To add an item use the input above.';
     opacity: 0.2;
 }
-
+button{
+    position: relative;
+}
 button[tooltip]::after{
     position: absolute;
     top: -100%;
