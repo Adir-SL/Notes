@@ -255,8 +255,8 @@ button {
 
 button:hover {
     /* opacity: 0.8; */
-    /* border-color: hotpink; */
-    box-shadow: 0 0 0 1px hotpink inset, 0 0 0 1px hotpink;
+    border: 1px solid hotpink !important;
+    /* box-shadow: 0 0 0 1px hotpink inset; */
 }
 
 button:focus {
