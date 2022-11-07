@@ -202,7 +202,7 @@ button{
 }
 button[tooltip]::after{
     position: absolute;
-    top: 110%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     content: attr(tooltip);
@@ -212,12 +212,11 @@ button[tooltip]::after{
     border-radius: 4px;
     background: hotpink;
     color: #000000;
-    z-index: 9;
+    z-index: 99;
     opacity: 0;
     transition: opacity 200ms linear 200ms;
 }
 button[tooltip]:hover::after{
-    z-index: 9;
     opacity: 1;
     transition: opacity 200ms linear 2000ms;
 }
