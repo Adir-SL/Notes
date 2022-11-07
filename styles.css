@@ -254,7 +254,8 @@ button {
 }
 
 button:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    border-color: hotpink;
 }
 
 button:focus {
