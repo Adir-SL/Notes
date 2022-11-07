@@ -214,6 +214,7 @@ button[tooltip]::after{
     color: #000000;
     z-index: 99;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 200ms linear 100ms;
 }
 button[tooltip]:hover::after{
