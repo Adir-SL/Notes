@@ -202,7 +202,7 @@ button{
 }
 button[tooltip]::after{
     position: absolute;
-    top: -100%;
+    top: 100%;
     content: attr(tooltip);
     padding: 4px;
     background: lightblue;
