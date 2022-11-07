@@ -76,6 +76,9 @@ button i{
 #myDate{
     display: flex;
 }
+button{
+    position: relative;
+}
 #myDate button{
     background-color: transparent;
     border: none;
@@ -196,9 +199,6 @@ footer{
 #myList:empty::after{
     content: 'Nothing here yet. To add an item use the input above.';
     opacity: 0.2;
-}
-button{
-    position: relative;
 }
 button[tooltip]::after{
     position: absolute;
