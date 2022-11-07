@@ -255,11 +255,8 @@ button {
 
 button:hover {
     /* opacity: 0.8; */
-    border: 1px solid hotpink !important;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     /* box-shadow: 0 0 0 1px hotpink inset; */
+    color: hotpink;
 }
 
 button:focus {
