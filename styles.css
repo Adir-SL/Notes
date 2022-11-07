@@ -202,13 +202,17 @@ button{
 }
 button[tooltip]::after{
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
     transform: translateX(-50%);
     content: attr(tooltip);
     white-space: nowrap;
-    padding: 4px;
-    background: lightblue;
+    font-weight: normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: hotpink;
+    color: #000000;
+    z-index: 9;
 }
 .flexDiv {
     display: flex;
