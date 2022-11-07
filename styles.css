@@ -206,6 +206,7 @@ button[tooltip]::after{
     left: 50%;
     transform: translateX(-50%);
     content: attr(tooltip);
+    white-space: nowrap;
     padding: 4px;
     background: lightblue;
 }
