@@ -76,9 +76,6 @@ button i{
 #myDate{
     display: flex;
 }
-button{
-    position: relative;
-}
 #myDate button{
     background-color: transparent;
     border: none;
@@ -243,6 +240,7 @@ button[tooltip]:hover::after{
 }
 
 button {
+    position: relative;
     border-radius: 4px;
     font-size: 1rem;
     border: 1px solid #cccccc;
