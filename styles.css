@@ -214,10 +214,11 @@ button[tooltip]::after{
     color: #000000;
     z-index: 9;
     opacity: 0;
-    transition: opacity 200ms linear 2000ms;
+    transition: opacity 200ms linear 200ms;
 }
 button[tooltip]:hover::after{
     opacity: 1;
+    transition: opacity 200ms linear 2000ms;
 }
 .flexDiv {
     display: flex;
