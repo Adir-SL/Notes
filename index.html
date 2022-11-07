@@ -24,14 +24,14 @@
 <body onload="loadFunc();">
     <div class="flexDiv sticky">
       <input type="text" id="myInput" autocomplete="off" placeholder="Your new list item" />
-      <button onclick="btnClick();" title="Adds a line to today's list"><i class="material-icons">add</i> Add Item</button>
+      <button onclick="btnClick();" tooltip="Adds a line to today's list"><i class="material-icons">add</i> Add Item</button>
     </div>
 
     <div class="flexDiv centerDiv">
       <div id="myDate">
-        <button type="button" onclick="dateMinus();" title="Previous day"><i class="material-icons">chevron_left</i></button>
-        <button type="button" onclick="gotoToday();" id="todayDate" class="bold" title="Go to today"></button>
-        <button type="button" onclick="datePlus();" title="Next day"><i class="material-icons">chevron_right</i></button>
+        <button type="button" onclick="dateMinus();" tooltip="Previous day"><i class="material-icons">chevron_left</i></button>
+        <button type="button" onclick="gotoToday();" id="todayDate" class="bold" tooltip="Go to today"></button>
+        <button type="button" onclick="datePlus();" tooltip="Next day"><i class="material-icons">chevron_right</i></button>
       </div>
     </div>
 
