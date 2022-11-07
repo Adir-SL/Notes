@@ -213,6 +213,11 @@ button[tooltip]::after{
     background: hotpink;
     color: #000000;
     z-index: 9;
+    opacity: 0;
+    transition: opacity 200ms linear 2000ms;
+}
+button[tooltip]:hover::after{
+    opacity: 1;
 }
 .flexDiv {
     display: flex;
