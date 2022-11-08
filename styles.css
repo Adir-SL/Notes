@@ -90,7 +90,7 @@ button i{
     font-weight: bold;
 }
 .sticky button i{
-    transform: translateY(5px);
+    transform: translateY(6px);
 }
 modBtns button:hover{
     color: hotpink;
