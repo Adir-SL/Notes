@@ -254,8 +254,6 @@ button {
 }
 
 button:hover {
-    /* opacity: 0.8; */
-    /* box-shadow: 0 0 0 1px hotpink inset; */
     color: hotpink;
 }
 
