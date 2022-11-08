@@ -208,7 +208,7 @@ button[tooltip]::after{
     padding: 4px 8px;
     border-radius: 4px;
     background: hotpink;
-    color: #000000;
+    color: #ffffff;
     z-index: 99;
     opacity: 0;
     pointer-events: none;
