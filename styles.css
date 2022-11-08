@@ -254,7 +254,7 @@ button {
 }
 
 button:hover {
-    color: hotpink;
+    color: hotpink !important;
 }
 
 button:focus {
