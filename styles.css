@@ -10,7 +10,7 @@ body {
 ul, ol {
     width: 100%;
     padding: 1em;
-    line-height: 130% !important;
+    line-height: 130%;
     border: 1px solid #dddddd;
     border-radius: 4px;
     background-color: #ffffff;
