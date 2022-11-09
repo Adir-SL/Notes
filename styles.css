@@ -60,6 +60,7 @@ li:hover {
 }
 li modBtns{opacity: 0;}
 li:hover modBtns{opacity: 1;}
+
 modBtns{
     float: right;
     transition: opacity 200ms linear 0s;
