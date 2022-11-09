@@ -175,6 +175,10 @@ footer{
     border: none;
     color: #ffffff;
 }
+#deleteDialog button:nth-of-type(1):hover {
+    color: #ffffff !important;
+    background-color: #ef50a0;
+}
 
 #deleteDialog b{
     color: hotpink;
