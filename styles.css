@@ -153,6 +153,7 @@ footer{
 #deleteDialog {
     position: absolute;
     width: calc(40% - 16px);
+    line-height: 150%;
     padding: 16px;
     top: 30%;
     left: calc(30% - 8px);
