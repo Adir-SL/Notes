@@ -227,8 +227,9 @@ button[tooltip]:hover::after{
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 40%;
-    margin-left: 30%;
+    /* width: 40%;
+    margin-left: 30%; */
+    width: clamp(500px, 40%, 92%);
 }
 .sticky{
     position: -webkit-sticky;
