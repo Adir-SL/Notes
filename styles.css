@@ -63,10 +63,13 @@ li:hover modBtns{opacity: 1;}
 
 modBtns{
     user-select: none;
+    -webkit-user-select: none;
     float: right;
     transition: opacity 200ms linear 0s;
 }
 modBtns button{
+    user-select: none;
+    -webkit-user-select: none;
     border: none;
     outline: none;
     background: none;
