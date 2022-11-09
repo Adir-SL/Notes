@@ -282,7 +282,7 @@ button:active {
         opacity: 1;
     }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .flexDiv{
         width: 60%;
         margin-left: 20%;
