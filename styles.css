@@ -61,15 +61,14 @@ li:hover {
 li modBtns{opacity: 0;}
 li:hover modBtns{opacity: 1;}
 
+li[contenteditable="true"] modBtns{
+    display: none !important;
+}
 modBtns{
-    user-select: none;
-    -webkit-user-select: none;
     float: right;
     transition: opacity 200ms linear 0s;
 }
 modBtns button{
-    user-select: none;
-    -webkit-user-select: none;
     border: none;
     outline: none;
     background: none;
