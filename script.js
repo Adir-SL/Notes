@@ -55,7 +55,7 @@ function loadFunc() {
       x[i].setAttribute("contenteditable", false);
     }
     checkMods();
-    localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+    localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
   }
   function startTimer(){
     setTimeout(function(){
@@ -97,7 +97,7 @@ function loadFunc() {
       if(event.target.classList[0] == "delBtn"){
         if(event.target.classList[1] == "doubleCheck"){
           event.target.parentNode.parentNode.outerHTML = "";
-          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+          localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
         }else{
           event.target.className += " doubleCheck";
           startTimer();
@@ -108,11 +108,11 @@ function loadFunc() {
       }else{
         if (event.target.className == "removed") {
           event.target.className = "";
-          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+          localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
         } else {
           event.target.className = "removed";
           event.target.setAttribute("contenteditable", false);
-          localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+          localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
           if(document.getElementById("removeToggle").checked){
               event.target.style.height = "0";
               event.target.style.minHeight = "0";
@@ -147,7 +147,7 @@ function loadFunc() {
         x[i].style.paddingBottom = "0.5em";
       }
     }
-    localStorage.setItem("myList", document.getElementById("myList").innerHTML);
+    localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
   }
   function openDialog() {
     document.getElementById("deleteDialog").style.display = "block";
