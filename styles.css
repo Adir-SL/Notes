@@ -62,6 +62,7 @@ li modBtns{opacity: 0;}
 li:hover modBtns{opacity: 1;}
 
 modBtns{
+    user-select: none;
     float: right;
     transition: opacity 200ms linear 0s;
 }
