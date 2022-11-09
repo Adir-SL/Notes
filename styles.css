@@ -175,6 +175,10 @@ footer{
     color: #ffffff;
 }
 
+#deleteDialog b{
+    font-weight: bold;
+}
+
 #removeToggle:checked+label {
     color: hotpink;
 }
