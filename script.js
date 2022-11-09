@@ -151,7 +151,7 @@ function loadFunc() {
   }
   function openDialog() {
     document.getElementById("deleteDialog").style.display = "block";
-    document.getElementById("cancelBtn")
+    document.getElementById("cancelBtn").focus();
   }
   function closeDialog() {
     document.getElementById("deleteDialog").style.display = "none";
