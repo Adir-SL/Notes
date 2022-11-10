@@ -326,8 +326,8 @@ button:active {
     }
 }
 @media only screen and (max-width: 990px) {
-    body{
-        font-size: 1em;
+    body, button, input{
+        font-size: 13px !important;
     }
     #wrapper{
         width: 92%;
