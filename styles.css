@@ -144,9 +144,9 @@ footer{
 
 #removeToggle+label {
     cursor: pointer;
-    position: absolute;
+    /* position: absolute;
     right: 1.5em;
-    bottom: 1.4em;
+    bottom: 1.4em; */
 }
 
 #deleteClick {
