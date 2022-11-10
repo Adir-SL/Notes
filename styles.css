@@ -7,6 +7,10 @@ body {
     user-select: none;
     font-weight: 500;
 }
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
 ul, ol {
     width: 100%;
     padding: 1em;
