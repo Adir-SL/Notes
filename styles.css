@@ -150,7 +150,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    display: none;
+    /* display: none; */
     /* position: fixed;
     bottom: 0;
     height: 4em;
