@@ -131,6 +131,8 @@ modBtns button:focus, modBtns button:active{
     100%{opacity:0;}
 }
 footer{
+    display: flex;
+    justify-content: space-between;
     /* position: fixed;
     bottom: 0;
     height: 4em;
