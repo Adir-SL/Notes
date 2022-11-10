@@ -6,6 +6,11 @@ body {
     background-color: #eeeeee;
     user-select: none;
     font-weight: 500;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #wrapper{
     display: flex;
