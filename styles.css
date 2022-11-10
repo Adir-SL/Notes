@@ -133,6 +133,7 @@ modBtns button:focus, modBtns button:active{
 footer{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     /* position: fixed;
     bottom: 0;
     height: 4em;
