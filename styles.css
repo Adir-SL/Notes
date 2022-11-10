@@ -16,7 +16,7 @@ body {
 #wrapper{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 92vh;
     width: 40%;
 }
 .outerList{
