@@ -313,9 +313,12 @@ button:active {
     body{
         font-size: 1em;
     }
-    .flexDiv{
+    #wrapper{
         width: 92%;
-        margin-left: 4%;
+    }
+    .flexDiv{
+        /* width: 92%;
+        margin-left: 4%; */
     }
     li{
         line-height: 1em;
