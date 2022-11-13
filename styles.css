@@ -84,6 +84,9 @@ li:hover modBtns{opacity: 1;}
 li[contenteditable="true"] modBtns{
     display: none !important;
 }
+li{
+    overflow: visible;
+}
 morebtns{
     position: absolute;
     top: 100%;
