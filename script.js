@@ -84,9 +84,14 @@ function loadFunc() {
     }
   }
   function toggleRemoved(event){
+    console.log(event.target.className)
+    console.log(event.target.parentNode.parentNode)
     if(event.target.tagName == "button" || event.target.tagName == "BUTTON"){
       if(event.target.classList.contains("menuBtn") == true){
-        event.target.classList.toggle("opened");
+        event.target.classList.add("opened");
+      }
+      if(event.target.className == "closeBtn"){
+        event.target.parentNode.parentNode.getElementsByClassName("menuBtn")[0].classList.remove("opened");
       }
       if(event.target.className == "editBtn"){
         var x = document.getElementsByTagName("li");
