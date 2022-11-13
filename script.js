@@ -21,7 +21,7 @@ function loadFunc() {
   }
   function addLi() {
     document.getElementById("myList").innerHTML +=
-      '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);" onblur="loseEditables();" spellcheck=false>' + document.getElementById("myInput").value + '<modbtns><button class="menuBtn"><i class="material-icons">menu</i></button><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns></li>';
+      '<li onclick="toggleRemoved(event);" ondblclick="liDblClick(event);" onblur="loseEditables();" spellcheck=false>' + document.getElementById("myInput").value + '<modbtns><button class="menuBtn"><i class="material-icons">menu</i></button><morebtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></morebtns></modbtns></li>';
     localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
   }
   function clearLi() {
