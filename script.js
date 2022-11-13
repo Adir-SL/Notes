@@ -88,6 +88,7 @@ function loadFunc() {
       if(event.target.classList.contains("menuBtn") == true){
         if(document.getElementsByClassName("opened").length > 1){
           document.getElementsByClassName("opened")[0].classList.toggle("opened");
+          event.target.classList.toggle("opened");
         }else{
           event.target.classList.toggle("opened");
         }
