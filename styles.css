@@ -68,7 +68,7 @@ li:last-of-type {
 }
 
 li:hover {
-    opacity: 0.7;
+    color: rgba(102,102,102,.7);
 }
 
 .removed {
