@@ -86,6 +86,11 @@ function loadFunc() {
   function toggleRemoved(event){
     if(event.target.tagName == "button" || event.target.tagName == "BUTTON"){
       if(event.target.classList.contains("menuBtn") == true){
+        var x = document.getElementsByClassName("opened");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].classList.toggle("opened");
+        }
         event.target.classList.toggle("opened");
       }
       if(event.target.className == "editBtn"){
