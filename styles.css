@@ -104,6 +104,9 @@ morebtns{
 .menuBtn.opened ~ morebtns{
     display: flex;
 }
+morebtns, morebtns:hover, morebtns:focus{
+    opacity: 1 !important;
+}
 
 modBtns{
     float: right;
