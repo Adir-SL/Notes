@@ -90,10 +90,12 @@ li{
 morebtns{
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -8%;
     display: flex;
-    padding: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
     padding-top: 16px;
+    padding-left: 0;
     gap: 4px;
     border-radius: 4px;
     flex-direction: column;
