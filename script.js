@@ -86,7 +86,7 @@ function loadFunc() {
   function toggleRemoved(event){
     if(event.target.tagName == "button" || event.target.tagName == "BUTTON"){
       if(event.target.classList.contains("menuBtn") == true){
-        if(document.getElementsByClassName("opened").length > 1){
+        if(document.getElementsByClassName("opened").length > 0){
           document.getElementsByClassName("opened")[0].classList.toggle("opened");
           event.target.classList.toggle("opened");
         }else{
