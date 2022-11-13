@@ -84,6 +84,13 @@ li:hover modBtns{opacity: 1;}
 li[contenteditable="true"] modBtns{
     display: none !important;
 }
+morebtns{
+    display: none;
+}
+.menuBtn.opened ~ morebtns{
+    display: block;
+}
+
 modBtns{
     float: right;
     transition: opacity 200ms linear 0s;
