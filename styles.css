@@ -235,7 +235,7 @@ footer{
 }
 
 #myList:empty::after{
-    content: 'Nothing here yet. To add an item use the input above.';
+    content: 'Nothing here yet.';
     opacity: 0.2;
 }
 button[tooltip]::after{
