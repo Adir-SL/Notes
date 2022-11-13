@@ -94,12 +94,13 @@ morebtns{
     display: flex;
     padding: 16px;
     gap: 16px;
+    border-radius: 4px;
     flex-direction: column;
     background-color: #ffffff;
-    /* display: none; */
+    display: none;
 }
 .menuBtn.opened ~ morebtns{
-    display: block;
+    display: flex;
 }
 
 modBtns{
