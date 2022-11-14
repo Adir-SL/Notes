@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     height: 92vh;
     width: 40%;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
 }
 .outerList{
     flex-grow: 1;
