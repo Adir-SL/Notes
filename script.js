@@ -104,7 +104,7 @@ function loadFunc() {
       }
       if(event.target.classList[0] == "delBtn"){
         if(event.target.classList[1] == "doubleCheck"){
-          event.target.parentNode.parentNode.outerHTML = "";
+          event.target.parentNode.parentNode.parentNode.outerHTML = "";
           localStorage.setItem("myList "+document.getElementById("todayDate").innerText, document.getElementById("myList").innerHTML);
         }else{
           event.target.className += " doubleCheck";
