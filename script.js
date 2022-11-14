@@ -99,8 +99,8 @@ function loadFunc() {
         for (i = 0; i < x.length; i++) {
           x[i].setAttribute("contenteditable", false);
         }
-        event.target.parentNode.parentNode.setAttribute("contenteditable", true);
-        event.target.parentNode.parentNode.focus();
+        event.target.parentNode.parentNode.parentNode.setAttribute("contenteditable", true);
+        event.target.parentNode.parentNode.parentNode.focus();
       }
       if(event.target.classList[0] == "delBtn"){
         if(event.target.classList[1] == "doubleCheck"){
