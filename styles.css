@@ -178,7 +178,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 8px 0;
     /* display: none; */
     /* position: fixed;
     bottom: 0;
@@ -296,7 +295,6 @@ button[tooltip]:hover::after{
     margin-left: 30%; */
 }
 .sticky{
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9;
