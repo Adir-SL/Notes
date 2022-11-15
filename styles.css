@@ -136,6 +136,7 @@ modBtns button{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 8px;
 }
 button i{
     pointer-events: none;
