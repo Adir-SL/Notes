@@ -19,6 +19,7 @@ body {
 #wrapper{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     width: 40%;
     /* height: 92vh; */
     /* overflow: hidden !important; */
