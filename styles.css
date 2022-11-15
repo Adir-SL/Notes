@@ -19,8 +19,8 @@ body {
 #wrapper{
     display: flex;
     flex-direction: column;
-    height: 92vh;
     width: 40%;
+    /* height: 92vh; */
     /* overflow: hidden !important; */
 }
 .outerList{
