@@ -299,7 +299,9 @@ button[tooltip]:hover::after{
     top: 0;
     z-index: 9;
     background-color: #eeeeee;
-    padding: 8px 0;
+}
+.sticky, footer{
+    padding: 16px 0;
 }
 
 .centerDiv {
