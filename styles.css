@@ -369,10 +369,7 @@ button:active {
     #wrapper{
         width: 60%;
     }
-    .flexDiv{
-        /* width: 60%;
-        margin-left: 20%; */
-    }
+
 }
 @media only screen and (max-width: 990px) {
     body, button, input{
@@ -381,10 +378,7 @@ button:active {
     #wrapper{
         width: 92%;
     }
-    .flexDiv{
-        /* width: 92%;
-        margin-left: 4%; */
-    }
+
     li{
         line-height: 1em;
         margin-top: 1em;
