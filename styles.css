@@ -133,6 +133,7 @@ modBtns button{
     outline: none;
     background: none;
     overflow: visible;
+    display: flex;
 }
 button i{
     pointer-events: none;
