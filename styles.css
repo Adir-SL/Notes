@@ -42,7 +42,7 @@ li {
     cursor: pointer;
     padding-left: 0;
     white-space: pre-wrap;
-    min-height: 2em;
+    /* min-height: 2em; */
     height: fit-content;
     line-height: 130% !important;
     margin-top: 1em;
@@ -252,7 +252,7 @@ footer{
 
 #myInput {
     line-height: 2em;
-    padding-left: 0.5em;
+    padding-left: 1em;
     border-radius: 4px;
     border: 1px solid #cccccc;
     font-size: 1rem;
