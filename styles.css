@@ -178,6 +178,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 8px 0;
     /* display: none; */
     /* position: fixed;
     bottom: 0;
