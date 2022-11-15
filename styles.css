@@ -270,7 +270,7 @@ footer{
     opacity: 0.2;
 }
 #myList:empty{
-    padding: 1em;
+    padding: 1.1em;
 }
 button[tooltip]::after{
     position: absolute;
