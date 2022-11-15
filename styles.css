@@ -269,6 +269,9 @@ footer{
     content: 'Nothing here yet.';
     opacity: 0.2;
 }
+#myList:empty{
+    padding: 1em;
+}
 button[tooltip]::after{
     position: absolute;
     top: 75%;
