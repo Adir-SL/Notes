@@ -30,7 +30,7 @@ body {
 }
 ul, ol {
     width: 100%;
-    padding: 1em;
+    padding: 0 1em;
     line-height: 130%;
     border: 1px solid #dddddd;
     border-radius: 4px;
@@ -53,6 +53,9 @@ li {
     transition: all 100ms ease-in-out 0s;
     animation: liAnim 200ms linear;
     animation-delay: -200ms;
+}
+ul li:last-of-type{
+    box-shadow: none;
 }
 
 li br {
