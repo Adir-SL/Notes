@@ -55,17 +55,16 @@ li {
     animation: liAnim 200ms linear;
     animation-delay: -200ms;
 }
-li::after{
+li::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 1px;
     left: 0;
     bottom: 0;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #dddddd;
 }
-ul li:last-of-type{
-    box-shadow: none;
+ul li:last-of-type::before{
+    border: none;
 }
 
 li br {
