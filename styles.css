@@ -134,6 +134,7 @@ modBtns button{
     background: none;
     overflow: visible;
     display: flex;
+    align-items: flex-end;
 }
 button i{
     pointer-events: none;
