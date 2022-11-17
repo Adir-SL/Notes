@@ -22,7 +22,7 @@ body {
     flex-grow: 1;
     width: 40%;
     /* height: 92vh; */
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
 }
 .outerList{
     flex-grow: 1;
