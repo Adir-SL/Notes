@@ -116,6 +116,9 @@ morebtns{
     display: none;
     box-shadow: 0 0 8px 0 #00000011;
 }
+.menuBtn{
+    width: 20px;
+}
 .menuBtn.opened ~ morebtns{
     display: flex;
 }
