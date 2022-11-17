@@ -399,4 +399,7 @@ button:active {
     li modBtns{
         opacity: 1;
     }
+    button[tooltip]:hover::after{
+        display: none;
+    }
 }
