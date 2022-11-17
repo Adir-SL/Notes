@@ -95,6 +95,7 @@ function loadFunc() {
         event.target.parentNode.parentNode.getElementsByClassName("menuBtn")[0].classList.remove("opened");
       }
       if(event.target.className == "editBtn"){
+        event.target.parentNode.parentNode.getElementsByClassName("menuBtn")[0].classList.remove("opened");
         var x = document.getElementsByTagName("li");
         var i;
         for (i = 0; i < x.length; i++) {
