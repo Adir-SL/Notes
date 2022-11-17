@@ -80,7 +80,7 @@ function loadFunc() {
     for (i = 0; i < x.length; i++) {
       if(x[i].innerHTML.slice(-8) == "modbtns>"){
       }else{
-        x[i].innerHTML += '<modbtns><button class="editBtn"><i class="material-icons">edit</i></button><button class="delBtn"><i class="material-icons">delete</i></button></modbtns>';
+        x[i].innerHTML += window.modeIconData;
       }
     }
   }
