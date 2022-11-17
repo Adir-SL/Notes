@@ -1,5 +1,6 @@
 *, *:active{
     -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 body {
     font-family: sans-serif;
