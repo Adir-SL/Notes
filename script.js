@@ -4,7 +4,7 @@ function loadFunc() {
   window.yesterday = new Date(today);
   document.getElementById("todayDate").innerText = window.actualToday.toDateString();
   loadList();
-  window.modeIconData = '<modbtns><button class="menuBtn"><i class="material-icons">more_vert</i></button><morebtns><button class="editBtn">Edit<i class="material-icons">edit</i></button><button class="delBtn">Delete<i class="material-icons">delete</i></button><button class="closeBtn">Cancel<i class="material-icons">close</i></button></morebtns></modbtns></li>';
+  window.moreIconData = '<modbtns><button class="menuBtn"><i class="material-icons">more_vert</i></button><morebtns><button class="editBtn">Edit<i class="material-icons">edit</i></button><button class="delBtn">Delete<i class="material-icons">delete</i></button><button class="closeBtn">Cancel<i class="material-icons">close</i></button></morebtns></modbtns></li>';
     // alert(loadedList);
   }
 
@@ -80,7 +80,7 @@ function loadFunc() {
     for (i = 0; i < x.length; i++) {
       if(x[i].innerHTML.slice(-8) == "modbtns>"){
       }else{
-        x[i].innerHTML += window.modeIconData;
+        x[i].innerHTML += '' + window.moreIconData;
       }
     }
   }
