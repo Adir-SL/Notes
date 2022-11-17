@@ -1,3 +1,9 @@
+button, button:active, button i, button i:active{
+    webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    outline: none;
+}
 body {
     font-family: sans-serif;
     font-family: "Inter", sans-serif;
